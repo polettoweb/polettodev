@@ -26,14 +26,20 @@
       >
         <slot name="switcher" />
         <!-- Added theme switcher as slot to avoid emit event from child-->
-        <li class="mr-8 mb-6 lg:mb-0">
+        <!-- <li class="mr-8 mb-6 lg:mb-0">
           <g-link to="/projects" class="text-copy-primary hover:text-blue-600">Projects</g-link>
+        </li> -->
+        <li class="mr-8 mb-6 lg:mb-0">
+          <g-link to="/" class="text-copy-primary hover:text-blue-600 home">Home</g-link>
         </li>
         <li class="mr-8 mb-6 lg:mb-0">
-          <g-link to="/resume" class="text-copy-primary hover:text-blue-600">Resume</g-link>
+          <g-link to="/blog" class="text-copy-primary hover:text-blue-600">Blog</g-link>
+        </li>
+        <li class="mr-8 mb-6 lg:mb-0">
+          <g-link to="/code" class="text-copy-primary hover:text-blue-600">Code</g-link>
         </li>
         <li>
-          <g-link to="/blog" class="text-copy-primary hover:text-blue-600">Blog</g-link>
+          <g-link to="/resume" class="text-copy-primary hover:text-blue-600">Resume</g-link>
         </li>
       </ul>
     </nav>

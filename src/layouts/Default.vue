@@ -1,6 +1,6 @@
 <template>
   <div
-    class="content-wrapper bg-background-primary font-sans text-copy-primary leading-normal flex flex-col min-h-screen relative"
+    class="content-wrapper bg-background-primary font-sans text-copy-primary leading-normal flex flex-col min-h-screen relative overflow-hidden"
     :class="theme"
   >
     <Header>
