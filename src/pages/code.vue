@@ -13,18 +13,24 @@
         </div>
         <div class="post w-4/5">
           <h2 class="text-3xl font-bold">
-            <g-link
-              :to="code.link"
+            <a
+              :href="code.link"
               target="_blank"
-              :title="code.linkTitle"
+              :title="code.title"
               rel="noopener noreferrer"
               class="text-copy-primary hover:text-blue-700"
-            >{{ code.title }}</g-link>
+            >{{ code.title }}</a>
           </h2>
 
           <div class="text-lg mb-4">{{ code.content }}</div>
           <div class="mb-8">
-            <g-link :to="code.link" :title="code.linkTitle" class="font-bold uppercase">View Code</g-link>
+            <a
+              :href="code.link"
+              target="_blank"
+              rel="noopener noreferrer"
+              :title="code.link"
+              class="font-bold uppercase"
+            >View Code</a>
           </div>
         </div>
       </div>
@@ -38,7 +44,20 @@ import codeData from "../assets/json/code.json";
 
 export default {
   metaInfo: {
-    title: "Code"
+    title: "Code | Poletto.dev | Marco Poletto | Web Developer | Mentor",
+    meta: [
+      { charset: "utf-8" },
+      {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1"
+      },
+      { name: "author", content: "Marco Poletto Web Developer" },
+      {
+        name: "description",
+        content:
+          "Marco Poletto Frontend Web Developer, Tech enthusiast, Coffee aficionado, Gamer, mentor, tutor, code, workshop"
+      }
+    ]
   },
   data() {
     return {

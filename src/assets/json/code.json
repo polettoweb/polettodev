@@ -3,28 +3,24 @@
     "title": "Copy text on click with JS",
     "content": "Copy on click some hex value on colored swatches using vanilla JS.",
     "link": "https://codepen.io/polettoweb/pen/KjazEZ",
-    "link-title": "Copy text on click with JS",
     "type": "codepen"
   },
   {
-    "title": "Copy text on click with JS",
-    "content": "Copy on click some hex value on colored swatches using vanilla JS.",
-    "link": "https://codepen.io/polettoweb/pen/KjazEZ",
-    "link-title": "Copy text on click with JS",
+    "title": "How to create simple tabs system with VueJS",
+    "content": "Easy way to build a simple tab system using VueJS.",
+    "link": "https://github.com/polettoweb/vue-tabs",
     "type": "codesandbox"
   },
   {
-    "title": "Copy text on click with JS",
-    "content": "Copy on click some hex value on colored swatches using vanilla JS.",
-    "link": "https://codepen.io/polettoweb/pen/KjazEZ",
-    "link-title": "Copy text on click with JS",
+    "title": "Automatically switch text color based on background's brightness",
+    "content": "quick example of how you can programmatically change text color, for example of a button, based on the element's background color.",
+    "link": "https://codepen.io/polettoweb/pen/WqZbVJ",
     "type": "github"
   },
   {
-    "title": "Copy text on click with JS",
-    "content": "Copy on click some hex value on colored swatches using vanilla JS.",
-    "link": "https://codepen.io/polettoweb/pen/KjazEZ",
-    "link-title": "Copy text on click with JS",
+    "title": "How to create animated multicolour border on element",
+    "content": "a quick example of how you can create an animated multi colour border effect to you element using CSS only",
+    "link": "https://codepen.io/polettoweb/pen/NQPypa",
     "type": "codepen"
   }
 ]

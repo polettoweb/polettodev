@@ -8,7 +8,17 @@
           <span class="leading-tight">Hi, I'm Marco,</span>
           <br />
           <span class="text-blue-700 leading-tight typer-wrapper">
-            <Vue-typer :text="role" :repeat="Infinity" :type-delay='100' :erase-delay='20' erase-style='backspace' :pre-erase-delay='1500' :shuffle="true" />
+            <ClientOnly>
+              <Vue-typer
+                :text="role"
+                :repeat="Infinity"
+                :type-delay="100"
+                :erase-delay="20"
+                erase-style="backspace"
+                :pre-erase-delay="1500"
+                :shuffle="true"
+              />
+            </ClientOnly>
           </span>
         </h1>
       </div>
@@ -17,27 +27,24 @@
       <img class="absolute rotate-45 bg-octa" src="@/assets/images/bg-octa.svg" alt />
       <div class="text-lg sm:text-xl mt-8 w-full pt-24">
         <div class="flex flex-col md:flex-row justify-between items-center">
-            <div>
-              <img src="@/assets/images/marco-exa.png" alt="avatar" class="w-4/5 h-4/5 mx-auto mb-8 lg:mb-0 md:w-48 md:h-48" />
-            </div>
-            <div class="flex-1 text-lg sm:text-xl ml-6">
-              I am a passionate frontend developer and mentor based in Amsterdam. I am originally from Venice and I love to work with JavaScript, CSS and everything around user interfaces.
-              I am using daily VueJS, GraphQL and Sass for a wonderful company in the southeast of Amsterdam. I've started my career with HTML 3.0, CSS(1) and FireWorks.
-              My goal is to build clean, performant and accessible user interfaces where the right user experience is a focal point.
-              My job is also my passion and, therefore, seeking out new technologies and stay up-to-date on industry trends and advancements
-              is more a pleasure than a duty. Helping trainee and Junior developers to grow and learn is a major part of my job and my personal mission.
-            </div>
+          <div>
+            <img
+              src="@/assets/images/marco-exa.png"
+              alt="avatar"
+              class="w-4/5 h-4/5 mx-auto mb-8 lg:mb-0 md:w-48 md:h-48"
+            />
           </div>
+          <div class="flex-1 text-lg sm:text-xl ml-6">
+            I am a passionate frontend developer and mentor based in Amsterdam. I am originally from Venice and I love to work with JavaScript, CSS and everything around user interfaces.
+            I am using daily VueJS, GraphQL and Sass for a wonderful company in the southeast of Amsterdam. I've started my career with HTML 3.0, CSS(1) and FireWorks.
+            My goal is to build clean, performant and accessible user interfaces where the right user experience is a focal point.
+            My job is also my passion and, therefore, seeking out new technologies and stay up-to-date on industry trends and advancements
+            is more a pleasure than a duty. Helping trainee and Junior developers to grow and learn is a major part of my job and my personal mission.
+          </div>
+        </div>
       </div>
     </div>
     <!-- end hero -->
-
-    
-
-
-
-
-
     <div class="container-inner mx-auto">
       <div class="flex flex-row items-center justify-center py-16">
         <h2 class="w-2/5 font-bold text-4xl mb-6 text-left" id="projects">Latest from blog</h2>
@@ -75,9 +82,8 @@
               I am using daily VueJS, GraphQL and Sass for a wonderful company in the southeast of Amsterdam. I've started my career with HTML 3.0, CSS(1) and FireWorks
             </div>
           </div>
-        </div> -->
-        <!-- end about me -->
-      </div>
+      </div>-->
+      <!-- end about me -->
     </div>
   </Layout>
 </template>
@@ -100,29 +106,54 @@ query Posts {
 </page-query>
 
 <script>
-import { VueTyper } from 'vue-typer'
 export default {
   metaInfo: {
-    title: 'Home'
+    title: "Home | Poletto.dev | Marco Poletto | Web Developer | Mentor",
+    meta: [
+      { charset: "utf-8" },
+      {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1"
+      },
+      { name: "author", content: "Marco Poletto Web Developer" },
+      {
+        name: "description",
+        content:
+          "Marco Poletto Frontend Web Developer, Tech enthusiast, Coffee aficionado, Gamer, mentor, tutor"
+      }
+    ]
   },
   components: {
-    VueTyper
+    VueTyper: () => import("vue-typer").then(m => m.VueTyper)
   },
   data() {
     return {
       role: [
-        'Frontend Dev',
-        'UI Engineer',
-        'Coffee aficionado',
-        'Tech enthusiast',
-        'Tutor',
-        'Gamer',
-        'Mentor'
+        "Frontend Dev",
+        "UI Engineer",
+        "Coffee aficionado",
+        "Tech enthusiast",
+        "Tutor",
+        "Gamer",
+        "Mentor"
       ]
-    }
+    };
   }
-}
+};
 </script>
+<style>
+.vue-typer .custom.char.typed {
+  color: #2b6cb0;
+}
+.vue-typer .custom.caret {
+  display: none;
+}
+
+.vue-typer .custom.char.selected {
+  background-color: transparent;
+  text-decoration: line-through;
+}
+</style>
 
 
 

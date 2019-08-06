@@ -150,17 +150,11 @@ nav .active--exact.home {
 }
 
 .vue-typer .custom.char.typed {
-  @apply text-blue-700 leading-tight text-6xl;
+  @apply leading-tight text-6xl;
 }
 
 .vue-typer .custom.char.selected {
-  background-color: transparent;
-  text-decoration: line-through;
   @apply text-blue-700 leading-tight text-6xl;
-}
-
-.vue-typer .custom.caret {
-  display: none;
 }
 
 .typer-wrapper {
@@ -172,4 +166,20 @@ nav .active--exact.home {
 .codesandbox-svg,
 .github-svg {
   fill: var(--text-copy-primary);
+}
+
+.toggle {
+  fill: var(--text-copy-primary);
+}
+
+.toggle-container {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.toggle-container:hover {
+  border: 2px solid var(--text-copy-primary);
 }

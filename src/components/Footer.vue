@@ -181,6 +181,10 @@ footer
   height: 100px;
   margin: 0;
 
+  @media(max-width: 1023px) {
+    display: none;
+  }
+
 }
 
 .parallax1 > use {
