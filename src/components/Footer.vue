@@ -28,9 +28,11 @@
         </g>
     </svg>
     <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8 svg-top">
-      <div class="mb-8 lg:mb-0">
+      <div class="mb-4 lg:mb-0">
         <div>Copyright 2019. All rights reserved.</div>
-        <!-- <div>
+      </div>
+      <div class="mb-4 lg:mb-0">
+        <div>
             <a href="rss.xml" class="text-white hover:text-gray-400 font-normal"
               >RSS Feed</a
             >
@@ -40,7 +42,7 @@
               class="text-white hover:text-gray-400 font-normal"
               >Sitemap</a
             >
-        </div>-->
+        </div>
       </div>
       <ul class="flex items-center">
         <li class="mr-8">
