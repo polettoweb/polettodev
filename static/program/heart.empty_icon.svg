@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-3.9%" y="-5.5%" width="107.7%" height="110.9%" filterUnits="objectBoundingBox" id="filter-1">
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Card-design-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.0-Mobile-Program-Page---Favourites" transform="translate(-184.000000, -493.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="Card-1" filter="url(#filter-1)" transform="translate(32.000000, 297.000000)">
+                <g id="Footer" transform="translate(0.000000, 188.000000)">
+                    <g id="Favourite" transform="translate(155.000000, 10.000000)">
+                        <g id="heart-outline" transform="translate(0.157895, 0.000000)">
+                            <path d="M7.91210526,11.0163488 L7.84210526,11.0871935 L7.76510526,11.0163488 C4.44010526,7.96294278 2.24210526,5.94386921 2.24210526,3.89645777 C2.24210526,2.47956403 3.29210526,1.41689373 4.69210526,1.41689373 C5.77010526,1.41689373 6.82010526,2.1253406 7.19110526,3.08882834 L8.49310526,3.08882834 C8.86410526,2.1253406 9.91410526,1.41689373 10.9921053,1.41689373 C12.3921053,1.41689373 13.4421053,2.47956403 13.4421053,3.89645777 C13.4421053,5.94386921 11.2441053,7.96294278 7.91210526,11.0163488 L7.91210526,11.0163488 Z M10.9921053,0 C9.77410526,0 8.60510526,0.573841962 7.84210526,1.47356948 C7.07910526,0.573841962 5.91010526,0 4.69210526,0 C2.53610526,0 0.842105263,1.70735695 0.842105263,3.89645777 C0.842105263,6.56730245 3.22210526,8.75640327 6.82710526,12.0648501 L7.84210526,13 L8.85710526,12.0648501 C12.4621053,8.75640327 14.8421053,6.56730245 14.8421053,3.89645777 C14.8421053,1.70735695 13.1481053,0 10.9921053,0 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
