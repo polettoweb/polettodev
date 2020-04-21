@@ -1,6 +1,12 @@
 [
   {
-    "text": "I am part of a freshly built team for creating the new iteration of an all-in-one event software. My role is to re-develop the frontend part using VueJs and GraphQL",
+    "text": "I am part of a team for iterating and improving a co-browsing software. My role is to handle the frontend part using VueJs",
+    "title": "Frontend Engineer",
+    "location": "Amsterdam",
+    "date": "2020"
+  },
+  {
+    "text": "I was part of a freshly built team for creating the new iteration of an all-in-one event software. My role is to re-develop the frontend part using VueJs and GraphQL",
     "title": "Frontend Developer",
     "location": "Amsterdam",
     "date": "2019"
