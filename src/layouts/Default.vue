@@ -6,7 +6,11 @@
     <Header>
       <template v-slot:logo>
         <g-link v-if="theme === 'theme-light'" to="/">
-          <g-image src="@/assets/images/logo_light_mode.svg" class="w-40" alt="logo" />
+          <g-image
+            src="@/assets/images/logo_light_mode.svg"
+            class="w-40"
+            alt="logo"
+          />
         </g-link>
         <g-link v-else to="/">
           <g-image src="@/assets/images/logo.svg" class="w-40" alt="logo" />
@@ -27,36 +31,36 @@
 
 <static-query>
 query {
-  metaData {
+  metadata {
     siteName
   }
 }
 </static-query>
 
 <script>
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import ThemeSwitcher from '../components/ThemeSwitcher'
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import ThemeSwitcher from "../components/ThemeSwitcher";
 export default {
   components: {
     Header,
     Footer,
-    ThemeSwitcher
+    ThemeSwitcher,
   },
   mounted() {
-    this.theme = localStorage.getItem('theme') || 'theme-dark'
+    this.theme = localStorage.getItem("theme") || "theme-dark";
   },
   data() {
     return {
-      theme: ''
-    }
+      theme: "",
+    };
   },
   methods: {
     updateTheme(theme) {
-      this.theme = theme
-    }
-  }
-}
+      this.theme = theme;
+    },
+  },
+};
 </script>
 
 <style src="../main.css" />

@@ -30,13 +30,13 @@
           <g-link to="/" class="text-copy-primary hover:text-blue-600 home">Home</g-link>
         </li>
         <li class="mr-8 mb-6 lg:mb-0">
-          <g-link to="/blog" class="text-copy-primary hover:text-blue-600">Blog</g-link>
+          <g-link to="/experience" class="text-copy-primary hover:text-blue-600">Experience</g-link>
         </li>
         <li class="mr-8 mb-6 lg:mb-0">
           <g-link to="/code" class="text-copy-primary hover:text-blue-600">Code</g-link>
         </li>
-        <li>
-          <g-link to="/resume" class="text-copy-primary hover:text-blue-600">Resume</g-link>
+        <li >
+          <g-link to="/blog" class="text-copy-primary hover:text-blue-600">Blog</g-link>
         </li>
       </ul>
     </nav>
