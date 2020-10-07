@@ -1,16 +1,12 @@
 <template>
   <Layout>
-    <div
-      class="hero container-inner mx-auto flex flex-col lg:flex-row flex-wrap justify-between pt-16 pb-24"
-    >
-      <div
-        class="text-4xl font-bold w-full lg:w-3/5 items-center text-center lg:text-left pb-8"
-      >
-        <h1>
+    <div class="hero container mx-auto flex flex-col lg:flex-row flex-wrap justify-between pt-16 pb-24">
+      <div class="text-4xl font-bold w-full lg:w-3/5 items-center text-center lg:text-left pb-8">
+        <h1 class="font-normal">
           <span class="leading-tight">Hi, I'm Marco,</span>
           <br />
-          <span class="text-blue-700 leading-tight typer-wrapper">
-            <ClientOnly placeholder="Frontend Developer">
+          <span class="text-copy-secondary leading-tight typer-wrapper">
+            <client-only placeholder="Frontend Developer">
               <Vue-typer
                 :text="role"
                 :repeat="Infinity"
@@ -19,14 +15,16 @@
                 :pre-erase-delay="1500"
                 :shuffle="true"
                 erase-style="backspace"
+                class="whitespace-no-wrap"
               />
-            </ClientOnly>
+            </client-only>
           </span>
         </h1>
       </div>
       <img
-        class="lg:w-2/5 hidden lg:inline-block personal-photo"
-        src="@/assets/images/marco-exa.png"
+        class="lg:w-2/5 hidden lg:inline-block relative z-10"
+        alt="Marco's fab portrait"
+        src="@/assets/images/marco.png"
       />
       <svg
         class="absolute rotate-45 bg-octa"
@@ -44,28 +42,27 @@
           fill-opacity="0.2"
         />
       </svg>
-      <div class="text-lg sm:text-xl mt-8 w-full pt-24">
+      <div class="text-lg sm:text-xl mt-8 w-full pt-8">
         <div class="flex flex-col md:flex-row justify-between items-center">
-          <div class="flex-1 text-lg sm:text-xl main-text">
-            I am a passionate frontend developer and mentor based in Amsterdam.
-            I am originally from Venice and I love to work with
-            <span>JavaScript</span>, CSS and everything around user interfaces.
-            I am using daily <span>VueJS</span>, <span>GraphQL</span> and
-            <span>Sass</span> for a consultancy in the center of Amsterdam. My
-            goal is to build clean, performant and accessible user interfaces
-            where the right user experience is a focal point. Helping trainee
-            and Junior developers to grow and learn is a major part of my job
-            and my <span>personal mission</span>. My job is also my passion and,
-            therefore, seeking out new technologies and stay up-to-date on
-            industry trends and advancements is more a pleasure than a duty.
+          <div class="flex-1 text-lg sm:text-xl text-justify sm:text-left main-text">
+            <p>
+              I am a passionate frontend developer and mentor based in Amsterdam. I am originally from Venice, and I
+              love to work with <span>JavaScript</span>, CSS and everything around user interfaces. I am using daily
+              <span>VueJS</span>, <span>GraphQL</span> and <span>Sass</span> for a consultancy in the centre of
+              Amsterdam. My goal is to build clean, performant and accessible user interfaces where the user experience
+              is a focal point. Helping trainee and Junior developers to grow and learn is a significant part of my job
+              and my <span>personal mission</span>. My job is also my passion and, therefore, seeking out new
+              technologies and staying up-to-date on industry trends and advancements are more a pleasure than a duty.
+            </p>
           </div>
         </div>
       </div>
     </div>
+
     <!-- end hero -->
-    <div class="container-inner mx-auto">
+    <div class="container mx-auto">
       <div class="flex flex-row items-center justify-center py-16">
-        <h2 class="w-2/5 font-bold text-4xl mb-6 text-center" id="projects">Latest from blog</h2>
+        <h2 class="font-bold text-4xl mb-6 text-center" id="projects">Latest from blog</h2>
       </div>
       <div
         v-for="post in $page.posts.edges"
@@ -76,12 +73,14 @@
           <g-link :to="post.node.path" class="text-copy-primary">{{ post.node.title }}</g-link>
         </h2>
         <div class="text-copy-secondary mb-4">
-          <span>{{ post.node.date }}</span>
+          <span class="mr-2">{{ post.node.date }}</span>
           <span>&middot;</span>
-          <span>{{ post.node.timeToRead }} min read</span>
+          <span class="ml-2">{{ post.node.timeToRead }} min read</span>
         </div>
 
-        <div class="text-lg mb-4">{{ post.node.summary }}</div>
+        <div class="text-lg mb-4">
+          <p class="text-copy-primary">{{ post.node.summary }}</p>
+        </div>
 
         <div class="mb-8">
           <g-link :to="post.node.path" class="font-bold uppercase">Read More</g-link>
@@ -145,32 +144,6 @@ export default {
   }
 };
 </script>
-<style lang="scss">
-.vue-typer .custom.char.typed {
-  color: #2b6cb0;
-}
-.vue-typer .custom.caret {
-  display: none;
-}
-
-.vue-typer .custom.char.selected {
-  background-color: transparent;
-  text-decoration: line-through;
-}
-
-.personal-photo {
-  position: relative;
-  z-index: 1;
-}
-
-.main-text {
-  span {
-    &:hover {
-      color: var(--text-highlight);
-    }
-  }
-}
-</style>
 
 
 

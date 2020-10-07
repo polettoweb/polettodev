@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="container-inner mx-auto py-16">
+    <div class="container mx-auto py-16">
       <h2 class="text-4xl font-bold mb-8">Current setup</h2>
       <p class="text-xl mb-8">Current tech and hardware that I use every day for my job.</p>
       <div>

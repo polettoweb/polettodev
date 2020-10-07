@@ -1,37 +1,10 @@
 <template>
-  <footer class=" text-white">
-      <svg class="editorial"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28 "
-        preserveAspectRatio="none">
-        <defs>
-          <path id="gentle-wave"
-          d="M-160 44c30 0 
-              58-18 88-18s
-              58 18 88 18 
-              58-18 88-18 
-              58 18 88 18
-              v44h-352z" />
-        </defs>
-        <g class="parallax1">
-        <use xlink:href="#gentle-wave" x="50" y="3" fill="#63B3ED"/>
-        </g>
-        <g class="parallax2">
-        <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2"/>
-        </g>
-            <g class="parallax3">
-        <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1"/>
-        </g>
-        <g class="parallax4">
-        <use xlink:href="#gentle-wave" x="50" y="6" fill="none"/>  
-        </g>
-    </svg>
-    <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8 svg-top">
-      <div class="mb-4 lg:mb-0">
-        <div>Copyright 2019. All rights reserved.</div>
+  <footer :class="['text-white m-0 p-0', {'bg-copy-secondary': theme !== 'sepia'}, {'bg-copy-primary': theme === 'sepia'}]">
+    <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-4 svg-top">
+      <div class="my-6 lg:my-0">
+        <div>&copy; Marco Poletto 2020.</div>
       </div>
-      <div class="mb-4 lg:mb-0">
+      <div class="my-6 lg:my-0">
         <div>
             <a href="rss.xml" class="text-white hover:text-gray-400 font-normal"
               >RSS Feed</a
@@ -44,8 +17,8 @@
             >
         </div>
       </div>
-      <ul class="flex items-center">
-        <li class="mr-8">
+      <ul class="my-6 lg:my-0 flex items-center">
+        <li class="mx-4">
           <a
             href="https://www.linkedin.com/in/marco-poletto-96853774/"
             target="_blank"
@@ -61,7 +34,7 @@
           </a>
         </li>
 
-        <li class="mr-8">
+        <li class="mx-4">
           <a
             href="https://dev.to/polettoweb"
             target="_blank"
@@ -77,7 +50,7 @@
           </a>
         </li>
 
-        <li class="mr-8">
+        <li class="mx-4">
           <a
             href="https://codepen.io/polettoweb/"
             target="_blank"
@@ -93,7 +66,7 @@
           </a>
         </li>
 
-        <li class="mr-8">
+        <li class="mx-4">
           <a
             href="https://youtube.com/channel/UC_ap7AXgonikRgAYqRhbibg"
             target="_blank"
@@ -109,7 +82,7 @@
           </a>
         </li>
 
-        <li class="mr-8">
+        <li class="mx-4">
           <a
             href="https://github.com/polettoweb"
             target="_blank"
@@ -125,7 +98,7 @@
           </a>
         </li>
 
-        <li class="mr-8">
+        <li class="mx-4">
           <a
             href="https://twitter.com/polettoweb"
             target="_blank"
@@ -146,87 +119,12 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    theme: {
+      type: String,
+      required: true
+    }
+  }
+};
 </script>
-<style lang="scss" scoped>
-footer
-{
-  margin:0;
-  padding:0;
-  background-color:#03396c;
-}
-.svg-top {
-    position: relative;
-    z-index: 1;
-}
-.editorial {
-  display: block;
-  position: absolute;
-  z-index: 0;
-  width: 100%;
-  height: 100px;
-  margin: 0;
-
-  @media(max-width: 1023px) {
-    display: none;
-  }
-
-}
-
-.parallax1 > use {
-  animation: move-forever1 10s linear infinite;
-  &:nth-child(1) {
-    animation-delay: -2s;
-  }
-}
-.parallax2 > use {
-  animation: move-forever2 8s linear infinite;
-  &:nth-child(1) {
-    animation-delay: -2s;
-  }
-}
-.parallax3 > use {
-  animation: move-forever3 6s linear infinite;
-  &:nth-child(1) {
-    animation-delay: -2s;
-  }
-}
-.parallax4 > use {
-  animation: move-forever4 4s linear infinite;
-  &:nth-child(1) {
-    animation-delay: -2s;
-  }
-}
-@keyframes move-forever1 {
-  0% {
-    transform: translate(85px, 0%);
-  }
-  100% {
-    transform: translate(-90px, 0%);
-  }
-}
-@keyframes move-forever2 {
-  0% {
-    transform: translate(-90px, 0%);
-  }
-  100% {
-    transform: translate(85px, 0%);
-  }
-}
-@keyframes move-forever3 {
-  0% {
-    transform: translate(85px, 0%);
-  }
-  100% {
-    transform: translate(-90px, 0%);
-  }
-}
-@keyframes move-forever4 {
-  0% {
-    transform: translate(-90px, 0%);
-  }
-  100% {
-    transform: translate(85px, 0%);
-  }
-}
-</style>

@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="container-inner mx-auto my-16">
+    <div class="container blog mx-auto my-16">
       <h1 class="text-4xl font-bold leading-tight">{{ $page.post.title }}</h1>
       <div class="text-xl text-gray-600 mb-4">{{ $page.post.date }}</div>
       <div class="flex mb-8 text-sm">
@@ -8,7 +8,7 @@
           :to="tag.path"
           v-for="tag in $page.post.tags"
           :key="tag.id"
-          class="bg-gray-300 rounded-full px-4 py-2 mr-4 hover:bg-green-300">
+          class=" border border-copy-secondary rounded-full px-4 py-2 mr-4 hover:border-transparent hover:bg-copy-primary hover:text-white">
           {{ tag.title }}
         </g-link>
       </div>
@@ -26,10 +26,15 @@ query Post ($path: String!) {
     title
     date (format: "MMMM D, Y")
     content
+    canonical
+    path
     tags {
       title
       path
     }
+  }
+  metadata {
+    siteUrl
   }
 }
 </page-query>
@@ -38,7 +43,13 @@ query Post ($path: String!) {
 export default {
   metaInfo() {
     return {
-      title: this.$page.post.title
+      title: this.$page.post.title,
+      link: [
+      {
+        rel: 'canonical',
+        href: this.$page.post.canonical == '' ? this.$page.metadata.siteUrl + this.$page.post.path : this.$page.post.canonical
+      }
+    ]
     }
   }
 }
@@ -261,7 +272,7 @@ export default {
   .markdown-body code,
   .markdown-body kbd,
   .markdown-body pre {
-    font-family: monospace,monospace;
+    font-family: Meslo, monospace;
     font-size: 1em;
   }
 
@@ -415,7 +426,7 @@ export default {
 
   .markdown-body code,
   .markdown-body pre {
-    font-family: monospace,SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+    font-family: Meslo,SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
     font-size: 12px;
   }
 

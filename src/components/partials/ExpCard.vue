@@ -1,20 +1,20 @@
 <template>
   <li class="expcard" data-cy="expcard">
     <svg
-      class="ion-ios-circle-filled text-copy-primary"
+      class="dot"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
     >
-      <circle cx="12" cy="12" r="12" fill="#3182CE" />
+      <circle cx="12" cy="12" r="12" fill="var(--text-copy-secondary)" />
     </svg>
-    <div class="expcard__title bg-blue-600">
-      <p>{{title}}</p>
+    <div class="expcard__title text-background-primary bg-copy-secondary p-5">
+      <p class="font-bold text-lg">{{title}}</p>
     </div>
-    <div class="expcard__text">
-      <p class="expcard__location">{{location}}</p>
-      <p class="expcard__date">{{date}}</p>
-      <p class="expcard__copy">{{text}}</p>
+    <div class="w-full py-5 px-10 h-auto">
+      <p>{{company}} - {{location}}</p>
+      <p class="pb-3 font-bold">{{date}}</p>
+      <p class="pb-3">{{text}}</p>
     </div>
   </li>
 </template>
@@ -29,7 +29,11 @@ export default {
     },
     location: {
       type: String,
-      required: false
+      required: true
+    },
+    company: {
+      type: String,
+      required: true
     },
     date: {
       type: String,

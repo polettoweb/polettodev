@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="container-inner mx-auto py-16">
+    <div class="container blog mx-auto py-16">
       <div
         v-for="post in $page.posts.edges"
         :key="post.id"
@@ -21,7 +21,7 @@
         <div class="text-lg mb-4">{{ post.node.summary }}</div>
 
         <div class="mb-8">
-          <g-link :to="post.node.path" class="font-bold uppercase">Read More</g-link>
+          <g-link :to="post.node.path" class="uppercase">Read More</g-link>
         </div>
       </div>
       <!-- end post -->

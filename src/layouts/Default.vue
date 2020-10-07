@@ -5,15 +5,18 @@
   >
     <Header>
       <template v-slot:logo>
-        <g-link v-if="theme === 'theme-light'" to="/">
+        <g-link v-if="theme === 'dark'" to="/">
+          <g-image src="@/assets/images/logo.svg" class="w-40" alt="logo" />
+        </g-link>
+        <g-link v-else-if="theme === 'sepia'" to="/">
+          <g-image src="@/assets/images/logo_sepia.svg" class="w-40" alt="logo" />
+        </g-link>
+        <g-link v-else to="/">
           <g-image
             src="@/assets/images/logo_light_mode.svg"
             class="w-40"
             alt="logo"
           />
-        </g-link>
-        <g-link v-else to="/">
-          <g-image src="@/assets/images/logo.svg" class="w-40" alt="logo" />
         </g-link>
       </template>
       <template v-slot:switcher>
@@ -25,7 +28,7 @@
     <div class="flex-grow">
       <slot />
     </div>
-    <Footer />
+    <Footer :theme="theme" />
   </div>
 </template>
 
@@ -48,7 +51,7 @@ export default {
     ThemeSwitcher,
   },
   mounted() {
-    this.theme = localStorage.getItem("theme") || "theme-dark";
+    this.theme = localStorage.getItem("theme") || "light";
   },
   data() {
     return {
@@ -62,5 +65,3 @@ export default {
   },
 };
 </script>
-
-<style src="../main.css" />

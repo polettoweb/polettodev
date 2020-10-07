@@ -1,7 +1,7 @@
 <template>
 <Layout>
   <div>
-    <div class="container-inner mx-auto flex flex-row justify-center items-center flex-wrap">
+    <div class="container mx-auto flex flex-row justify-center items-center flex-wrap">
       <div
         v-for="item in projectData"
         class="w-1/4 h-80 mx-2 my-2 px-5 py-5 bg-blue-800 hover:bg-blue-900"

@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="container-inner mx-auto py-16">
+    <div class="container mx-auto py-16">
       <div
         v-for="code in codeData"
         :key="code.title"

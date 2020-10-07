@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section class="resume__container container-inner mx-auto">
+    <section class="resume__container container mx-auto">
       <div class="experience__container flex flex-col">
         <h1>Experience</h1>
         <p class="experience__intro text-copy-primary" data-cy="experience__intro">
@@ -19,6 +19,7 @@
             v-for="item in resumeData"
             :key="item.title"
             :location="item.location"
+            :company="item.company"
             :title="item.title"
             :date="item.date"
             :text="item.text"
@@ -70,7 +71,7 @@ export default {
     position: absolute;
     width: 2px;
     height: 90%;
-    background-color: var(--bg-background-tertiary);
+    background-color: var(--bg-background-secondary);
     left: 50%;
     @media (max-width: 767px) {
       left: 96%;
@@ -110,13 +111,13 @@ export default {
             font-size: 30px;
             width: 0;
             height: 0;
-            border-top: 16px solid #3182ce;
+            border-top: 16px solid var(--text-copy-secondary);
             border-right: 16px solid transparent;
             right: -16px;
             top: 0;
           }
 
-          .ion-ios-circle-filled {
+          .dot {
             right: -44px;
             @media (max-width: 767px) {
               right: -7.8vw;
@@ -135,7 +136,7 @@ export default {
             content: "";
             width: 0;
             height: 0;
-            border-top: 16px solid #3182ce;
+            border-top: 16px solid var(--text-copy-secondary);
             border-left: 16px solid transparent;
             left: -16px;
             top: 0;
@@ -147,7 +148,7 @@ export default {
             }
           }
 
-          .ion-ios-circle-filled {
+          .dot {
             left: -41px;
             @media (max-width: 767px) {
               left: auto;
@@ -160,20 +161,7 @@ export default {
           margin-top: -60px;
         }
 
-        &__title {
-          padding: 20px;
-
-          p {
-            font-weight: 700;
-            line-height: 30px;
-            font-size: 19px;
-          }
-        }
-
         &__text {
-          width: 100%;
-          height: auto;
-          padding: 20px;
 
           p {
             padding: 0 20px;
@@ -189,7 +177,7 @@ export default {
           }
         }
 
-        .ion-ios-circle-filled {
+        .dot {
           font-size: 30px;
           position: absolute;
           top: -15px;
