@@ -12,7 +12,7 @@
 
 .light {
   --bg-background-primary: white;
-  --bg-background-secondary: rgb(228,238,245);
+  --bg-background-secondary: rgb(245, 228, 234);
   --text-copy-primary: rgb(45,55,72);
   --text-copy-secondary: rgb(43,108,176);
 }
@@ -30,6 +30,14 @@ h1, h2 {
 
 a {
   @apply text-copy-secondary;
+}
+
+a:hover {
+  @apply border-b-2 pb-1 border-copy-secondary;
+}
+
+h2 > a:hover, h3 > a:hover {
+  @apply border-0;
 }
 
 
