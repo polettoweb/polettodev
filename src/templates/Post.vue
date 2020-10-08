@@ -12,9 +12,9 @@
           {{ tag.title }}
         </g-link>
       </div>
-      <div class="markdown-body mb-8" v-html="$page.post.content" />
-      <div class="mb-8">
-        <g-link to="/blog" class="font-bold uppercase">Back to Blog</g-link>
+      <div class="markdown-body mb-24" v-html="$page.post.content" />
+      <div class="mb-8 text-center">
+        <g-link to="/blog" class="uppercase border-2 py-1 px-2 rounded-md hover:border-transparent hover:bg-copy-primary hover:text-white">Back to Blog</g-link>
       </div>
     </div>
   </Layout>

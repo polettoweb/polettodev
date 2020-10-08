@@ -39,6 +39,4 @@ npm run serve
 
 ## Get the code
 
-### &nbsp; &nbsp; [GitHub](https://github.com/polettoweb/vue-tabs)
-
-### &nbsp; &nbsp; [CodeSandbox](https://codesandbox.io/s/vue-template-xxtek)
+#### [GitHub](https://github.com/polettoweb/vue-tabs) &nbsp; &nbsp; [CodeSandbox](https://codesandbox.io/s/vue-template-xxtek)
