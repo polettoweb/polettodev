@@ -32,7 +32,7 @@ a {
   @apply text-copy-secondary;
 }
 
-a:hover {
+a:not(.pagination):hover {
   @apply border-b-2 pb-1 border-copy-secondary;
 }
 
@@ -121,4 +121,8 @@ nav .active--exact.home, nav .active:not(.home) {
 
 .markdown-body img {
   margin: 0 auto;
+}
+
+.pagination.cursor-not-allowed {
+  visibility: hidden;
 }
