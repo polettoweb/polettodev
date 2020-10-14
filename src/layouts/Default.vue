@@ -51,7 +51,7 @@ export default {
     ThemeSwitcher,
   },
   mounted() {
-    this.theme = localStorage.getItem("theme") || "light";
+    this.theme = localStorage.getItem("theme") || "sepia";
   },
   data() {
     return {
