@@ -4,6 +4,7 @@ path: /blog/google-drops-shared-resource-cache
 date: 2020-10-19
 summary: Starting with Chrome 86, Google has decided to remove a feature often leverage by frontend developers. shared resource-cache...
 tags: ['chrome', 'google', 'frontend', 'performance']
+canonical: https://www.poletto.dev/blog/google-drops-shared-resource-cache
 ---
 
 Starting with Chrome 86, Google has decided to remove a feature often leverage by frontend developers: shared resource-cache.
