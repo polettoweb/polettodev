@@ -7,6 +7,13 @@
     "website":"https://ecommerce-react-polettoweb.netlify.app/"
   },
   {
+    "title": "Simple Homapge Netflix clone",
+    "content": "Netflix clone with React Hooks",
+    "link": "https://github.com/polettoweb/netflix-clone",
+    "type": "github",
+    "website":"https://netflix-clone-68801e.netlify.app/"
+  },
+  {
     "title": "Copy text on click with JS",
     "content": "Copy on click some hex value on colored swatches using vanilla JS.",
     "link": "https://codepen.io/polettoweb/pen/KjazEZ",
