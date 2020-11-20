@@ -12,13 +12,13 @@
     "@gridsome/plugin-sitemap": "^0.4.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.3",
-    "axios": "^0.20.0",
+    "axios": "^0.21.0",
     "global": "^4.4.0",
-    "gridsome": "^0.7.21",
-    "gridsome-plugin-remark-shiki": "^0.4.0",
+    "gridsome": "^0.7.22",
+    "gridsome-plugin-remark-shiki": "^0.6.0",
     "gridsome-plugin-rss": "^1.2.0",
     "lodash.pick": "^4.4.0",
-    "vue-scrollto": "^2.18.2",
+    "vue-scrollto": "^2.20.0",
     "vue-typer": "^1.2.0"
   },
   "devDependencies": {
