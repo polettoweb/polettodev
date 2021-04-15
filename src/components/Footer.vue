@@ -2,7 +2,7 @@
   <footer :class="['text-white m-0 p-0', {'bg-copy-secondary': theme !== 'sepia'}, {'bg-copy-primary': theme === 'sepia'}]">
     <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-4 svg-top">
       <div class="my-6 lg:my-0">
-        <div>&copy; Marco Poletto 2020.</div>
+        <div>&copy; Marco Poletto {{ year }}.</div>
       </div>
       <div class="my-6 lg:my-0">
         <div>
@@ -124,6 +124,11 @@ export default {
     theme: {
       type: String,
       required: true
+    }
+  },
+  data() {
+    return {
+      year: new Date().getFullYear()
     }
   }
 };

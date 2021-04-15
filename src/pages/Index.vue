@@ -137,6 +137,7 @@ export default {
         "Coffee aficionado",
         "Tech enthusiast",
         "Tutor",
+        "Scrum Master",
         "Gamer",
         "Mentor"
       ]
