@@ -1,5 +1,12 @@
 [
   {
+    "title": "Simple Vue 3 and Firebase blog",
+    "content": "POC with Vue 3 and Firebase for practicing with Vue 3",
+    "link": "https://github.com/polettoweb/vue3-blog",
+    "type": "github",
+    "website":"https://polettodev-vue3-blog.netlify.app/"
+  },
+  {
     "title": "eCommerce Website with React and Redux",
     "content": "POC with React and Redux for an eCommerce platform",
     "link": "https://github.com/polettoweb/ecommerce-react",
