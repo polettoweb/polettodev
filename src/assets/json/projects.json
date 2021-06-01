@@ -1,5 +1,12 @@
 [
   {
+    "title": "Simple Next.js website",
+    "content": "POC with Next.js and Vercel for practicing with Next.js",
+    "link": "https://github.com/polettoweb/peoplelist",
+    "type": "github",
+    "website":"https://peoplelist.vercel.app/"
+  },
+  {
     "title": "Simple Vue 3 and Firebase blog",
     "content": "POC with Vue 3 and Firebase for practicing with Vue 3",
     "link": "https://github.com/polettoweb/vue3-blog",
