@@ -1,31 +1,38 @@
 [
   {
+    "title": "eCommerce Website with React Hooks and ContextAPI",
+    "content": "POC with React using ContextAPI and Hooks for an eCommerce platform",
+    "link": "https://github.com/polettoweb/food-delivery",
+    "type": "github",
+    "website": "https://ecommerce-hooks-polettoweb.netlify.app/"
+  },
+  {
     "title": "Simple Next.js website",
     "content": "POC with Next.js and Vercel for practicing with Next.js",
     "link": "https://github.com/polettoweb/peoplelist",
     "type": "github",
-    "website":"https://peoplelist.vercel.app/"
+    "website": "https://peoplelist.vercel.app/"
   },
   {
     "title": "Simple Vue 3 and Firebase blog",
     "content": "POC with Vue 3 and Firebase for practicing with Vue 3",
     "link": "https://github.com/polettoweb/vue3-blog",
     "type": "github",
-    "website":"https://polettodev-vue3-blog.netlify.app/"
+    "website": "https://polettodev-vue3-blog.netlify.app/"
   },
   {
     "title": "eCommerce Website with React and Redux",
     "content": "POC with React and Redux for an eCommerce platform",
     "link": "https://github.com/polettoweb/ecommerce-react",
     "type": "github",
-    "website":"https://ecommerce-react-polettoweb.netlify.app/"
+    "website": "https://ecommerce-react-polettoweb.netlify.app/"
   },
   {
     "title": "Simple Homapge Netflix clone",
     "content": "Netflix clone with React Hooks",
     "link": "https://github.com/polettoweb/netflix-clone",
     "type": "github",
-    "website":"https://netflix-clone-68801e.netlify.app/"
+    "website": "https://netflix-clone-68801e.netlify.app/"
   },
   {
     "title": "Copy text on click with JS",
